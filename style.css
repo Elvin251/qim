@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(49, 49, 124);
+}
+.container{
+    margin: 200px auto;
+    background-color: white;
+    width: 450px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 15px;
+}
+input{
+    width: 100%;
+}
+button{
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+background-color: green;
+    width: 100%;
+    margin-top: 50px;
+}
