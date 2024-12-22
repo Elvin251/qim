@@ -17,17 +17,21 @@
     let arr = [];
     let a="p";
 function app() {
-
-    let username = document.getElementById("array").value;
-    a=document.getElementById("by").innerText;
-if (a=="" ) {
-    document.getElementById("by").innerText=(document.getElementById("array").value);
-} else {
-    document.getElementById("by").innerText=(a+ "," +document.getElementById("array").value);
-}
-    arr.push(username);
-    console.log(arr);
- 
-    document.getElementById("array").value="";
+    if (document.getElementById("by").innerText.length<72) {
+        let username = document.getElementById("array").value;
+        a=document.getElementById("by").innerText;
+    if (a=="" ) {
+        document.getElementById("by").innerText=(document.getElementById("array").value);
+    } else {
+        document.getElementById("by").innerText=(a+ "," +document.getElementById("array").value);
     }
+        arr.push(username);
+        console.log(arr);
+     
+        document.getElementById("array").value=""; 
+    } else {
+         console.log("artiq arreydeki yer bitdi")}
+  
+}
+
     
